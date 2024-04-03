@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main {
+    width: 100%;
+    /* padding: 5px; */
+}
+
+
+.nosotros-titulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150px;  
+    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
+    background-size: cover;
+    width: 100%;
+    height: 150px; 
+    margin: 120px auto 40px;
+
+}
+
+main #nosotros :nth-child(2) {
+    width: 60%;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#intro {
+    margin: 50px auto 10px;
+}
+
+#intro p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+   
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    align-self: center; 
+    text-align: center;  
+}
+
+.sustent {
+    text-align: left;
+    padding: 0 100px;
+    margin-bottom: 20px;
+    margin: 25px 20px;
+}  
+
+
+.img1-sustent {
+    background-image: url('https://www.clarin.com/2023/10/11/4CWipIQD2_1200x0__1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input#sabermas {
+    appearance: none;
+   
+}
+
+label#contenido {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 6px; 
+    user-select: none;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 15px;
+   
+}
+
+.contenido {
+    display: none;
+    
+}
+
+input#sabermas:checked + .contenido {
+    display: block;
+}
+
+button {
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+

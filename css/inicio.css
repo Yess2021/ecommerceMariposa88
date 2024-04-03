@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#img1-inicio {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../Img/playa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    position: relative;
+    z-index: 1;
+     
+}
+
+#img2-inicio {
+    background-image: url('../Img/recorte.png');
+    margin: auto;
+    width: 300px;
+    height: 95%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+    background-size: contain;
+
+    position: absolute;
+    bottom: 0; 
+    right: 50px;
+    z-index: 2;
+}
+
+.texto {
+    position: absolute;
+    left: 70px;
+    bottom: 250px;
+    z-index: 2;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color:aliceblue;   
+}
+
+.texto p {
+    font-family:"Roboto", sans-serif; 
+    font-weight: 700;
+    font-size: 30px;
+    color:goldenrod;
+}
+
+main .section-cards-header h1 {
+    font-family:"Roboto", sans-serif; 
+    font-weight: 400;
+    margin-top: 70px;
+    color: black;
+    /* color: rgb(150, 57, 13); */
+   /*  margin-bottom: 40px;
+    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
+    background-size: cover;
+    width: 100%;
+    height: 100px; 
+    line-height: 100px; */
+
+}
+
+main .section-cards-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+main section img {
+    width: 300px;
+    margin-bottom: 10px;
+   
+} 
+
+button.favoritosIcon {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    z-index: 4;
+
+}
+
+button.favoritosIcon img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+}
+
+main .card-container {
+    border: 1px solid transparent;
+    width: 302px; 
+    height: 530px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+main section.card-container:hover {
+    border: 1px solid grey;
+    background-color: rgba(241, 237, 237, 0.8);
+
+}
+
+main section h4 {
+    font-size: 17px;
+    color: rgb(150, 57, 13);
+    margin: 5px;
+}
+
+
+button.ver-mas {
+    border: 1px solid rgb(78, 42, 25);
+    width: 100px;
+    height: 35px;
+    margin-bottom: 50px;
+    background-color: rgb(193, 120, 85) ;   
+}
+
+button.ver-mas a {
+    font-family:"Roboto", sans-serif; 
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+#look {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+#extra {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 6px;
+    border: none;
+    margin-bottom: 50px;
+
+}
+
+.shopLook {
+    width: 250px;
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;  
+    justify-content:space-evenly;
+    margin: 3px;
+    opacity: 0.8;
+}
+
+#insta1 {
+    background-image: url('../Img/IMG-0991.JPG');   
+}
+
+#insta2 {
+    background-image: url('../Img/IMG-0828.JPG');    
+}
+
+#insta3 {
+    background-image: url('../Img/WhatsApp Img.jpeg');    
+}
+
+#insta4 {
+    background-image: url('../Img/001_0032.jpeg'); 
+}
+
+#insta5 {
+    background-image: url('../Img/Copia.JPG');
+}
+
+.insta:hover {
+    opacity: 1;
+    
+}

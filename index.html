@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-mariposa">
+            <h2 id="nombre-empresa">Mariposa 88</h2>
+            <div class="logo-mariposa"></div>
+        </div>
+
+      
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a> </li>
+                    <li> <a href="./alta.html">Alta</a> </li>
+                    <li> <a href="./contacto.html">Contacto</a> </li>
+                    <li> <a href="./nosotros.html">Nosotros</a> </li>
+                </ul>
+            </nav>
+
+            <div class="iconos-header">
+                <a id="logoFav" href="./favoritos.html"></a>
+                <a id="logoRegistro" href="./registro.html"></a>
+
+                <div class="search-container">
+                    <div id="logoBuscar" onclick="botonSearch()"></div>
+                    <div id="barra-busqueda">
+                        <input type="text" id="input-busqueda" />
+                        <input type="submit" value="Buscar" id="submit" />
+                    </div>
+                </div>
+
+                <a id="botonCarrito" href="./carrito.html"></a>
+            </div>
+    
+        <button class="menu-hamburger" onclick="showMenu()"></button>
+
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+
+    <div id="overlay">
+        <div class="mobile-menu">
+            <div class="mobile-icons"> 
+                <div class="grupo-iconos">
+                    <a class="fav" href="./favoritos.html"></a>
+                    <a class="registro" href="./registro.html"></a>
+                    <a class="carrito" href="./carrito.html"></a>
+                </div>
+                <button class="cerrar" onclick="closeMenu()"></button>
+            </div>
+
+            <hr>
+
+            <ul class="links-menu">
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+            <div class="social-icons">
+                <div class="face"></div>
+                <div class="insta"></div>
+                <div class="tictoc"></div>
+            </div>
+      
+        </div>
+       
+    </div>
+    <!-- ------------------------------------------------------------------------------- -->
+    <main>
+
+        <div id="img1-inicio">
+            <div id="img2-inicio"></div>
+            <div class="texto">
+                <h3>Verano todo el año<br>Llevate todo!</h3>
+                <p>Hasta 30% off</p>
+            </div>
+        </div>
+
+        <div class="section-cards">
+            <div class="section-cards-header">
+                <h1>Conjuntos de Bikinis</h1>
+            </div>
+
+            <div class="section-cards-container"></div>
+
+            <button class="ver-mas"><a href="#">Ver mas</a></button>
+        </div>
+        <h3 id="look">Shop the Look</h3>
+        <section id="extra">
+
+            <div class="shopLook" id="insta1"></div>
+            <div class="shopLook" id="insta2"></div>
+            <div class="shopLook" id="insta3"></div>
+            <div class="shopLook" id="insta4"></div>
+            <div class="shopLook" id="insta5"></div>
+        </section>
+    </main>
+
+    <div class="icons-footer">
+        <h2 class="nom-empresa-footer">Mariposa 88</h2>
+        <div class="face"></div>
+        <div class="insta"></div>
+        <div class="tictoc"></div>
+    </div>
+    <hr>
+    <div class="extra-footer">
+        <ul>
+            <li>Cambios y devoluciones</li>
+            <li>Envios</li>
+            <li>Formas de Pago</li>
+            <li>Terminos y Condiciones</li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <h3 class="titulo-footer">&copy; Copyright 2024 Bikinis Mariposa 88</h3>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

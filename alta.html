@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/alta.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-mariposa">
+            <h2 id="nombre-empresa">Mariposa 88</h2>
+            <div class="logo-mariposa"></div>
+        </div>
+
+      
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a> </li>
+                    <li> <a href="./alta.html">Alta</a> </li>
+                    <li> <a href="./contacto.html">Contacto</a> </li>
+                    <li> <a href="./nosotros.html">Nosotros</a> </li>
+                </ul>
+            </nav>
+
+            <div class="iconos-header">
+                <a id="logoFav" href="./favoritos.html"></a>
+                <a id="logoRegistro" href="./registro.html"></a>
+
+                <div class="search-container">
+                    <div id="logoBuscar" onclick="botonSearch()"></div>
+                    <div id="barra-busqueda">
+                        <input type="text" id="input-busqueda" />
+                        <input type="submit" value="Buscar" id="submit" />
+                    </div>
+                </div>
+
+                <a id="botonCarrito" href="./carrito.html"></a>
+            </div>
+    
+        <button class="menu-hamburger" onclick="showMenu()"></button>
+
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+
+    <div id="overlay">
+        <div class="mobile-menu">
+            <div class="mobile-icons"> 
+                <div class="grupo-iconos">
+                    <a class="fav" href="./favoritos.html"></a>
+                    <a class="registro" href="./registro.html"></a>
+                    <a class="carrito" href="./carrito.html"></a>
+                </div>
+                <button class="cerrar" onclick="closeMenu()"></button>
+            </div>
+
+            <hr>
+
+            <ul class="links-menu">
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+            <div class="social-icons">
+                <div class="face"></div>
+                <div class="insta"></div>
+                <div class="tictoc"></div>
+            </div>
+      
+        </div>
+       
+    </div>
+
+    <main>
+        <!-- ------------------------------------------------------------------------------- -->
+        <h1>Alta de productos</h1>
+
+        <form class="alta-form">
+            <!-- campo de ingreso de nombre de producto -->
+            <div class="input-group">
+                <label for="nombre">nombre</label>
+                <input class="entrada" id="nombre" type="text" name="nombre">
+                <div class="error-details"></div>
+            </div>
+
+            <!-- campo de ingreso de detalles de producto -->
+            <div class="input-group">
+                <label for="detalles">detalles</label>
+                <input class="entrada" id="detalles" type="text" name="detalles">
+                <div class="error-details"></div>
+            </div>
+
+            <!-- campo de ingreso de precio de producto -->
+            <div class="input-group">
+                <label for="precio">precio</label>
+                <input class="entrada" id="precio" type="number" step="0.00" name="precio">
+                <div class="error-details"></div>
+            </div>
+
+            <!-- campo de ingreso de stock de producto -->
+            <div class="input-group">
+                <label for="stock">stock</label>
+                <input class="entrada" id="stock" type="number" name="stock">
+                <div class="error-details"></div>
+            </div>
+
+            <!-- campo de ingreso de colores de producto -->
+            <div class="input-group">
+                <label for="colores">marca</label>
+                <input class="entrada" id="colores" type="text" name="colores">
+                <div class="error-details"></div>
+            </div>
+
+            <!-- campo de ingreso de la foto del producto -->
+            <div class="input-group">
+                <label for="foto">foto</label>
+                <input class="entrada" id="foto" type="text" name="foto">
+                <div class="error-details"></div>
+            </div>
+
+            <button>Agregar</button>
+        </form>
+
+        <hr>
+
+        <!-- ------------------------------------------------------------------------------- -->
+        <h2>Lista de productos disponibles</h2>
+
+        <table></table>
+
+    </main>
+
+    <footer>
+        <h3 class="titulo-footer">&copy; Copyright 2024 Bikinis Mariposa 88</h3>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/alta.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-mariposa">
+            <h2 id="nombre-empresa">Mariposa 88</h2>
+            <div class="logo-mariposa"></div>
+        </div>
+
+      
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a> </li>
+                    <li> <a href="./alta.html">Alta</a> </li>
+                    <li> <a href="./contacto.html">Contacto</a> </li>
+                    <li> <a href="./nosotros.html">Nosotros</a> </li>
+                </ul>
+            </nav>
+
+            <div class="iconos-header">
+                <a id="logoFav" href="./favoritos.html"></a>
+                <a id="logoRegistro" href="./registro.html"></a>
+
+                <div class="search-container">
+                    <div id="logoBuscar" onclick="botonSearch()"></div>
+                    <div id="barra-busqueda">
+                        <input type="text" id="input-busqueda" />
+                        <input type="submit" value="Buscar" id="submit" />
+                    </div>
+                </div>
+
+                <a id="botonCarrito" href="./carrito.html"></a>
+            </div>
+    
+        <button class="menu-hamburger" onclick="showMenu()"></button>
+
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+
+    <div id="overlay">
+        <div class="mobile-menu">
+            <div class="mobile-icons"> 
+                <div class="grupo-iconos">
+                    <a class="fav" href="./favoritos.html"></a>
+                    <a class="registro" href="./registro.html"></a>
+                    <a class="carrito" href="./carrito.html"></a>
+                </div>
+                <button class="cerrar" onclick="closeMenu()"></button>
+            </div>
+
+            <hr>
+
+            <ul class="links-menu">
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+            <div class="social-icons">
+                <div class="face"></div>
+                <div class="insta"></div>
+                <div class="tictoc"></div>
+            </div>
+      
+        </div>
+       
+    </div>
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <main>
+        <h1 class="contacto">Contacto</h1>
+
+        <section class="section1">
+            <h2 class="intro">Estamos para ayudarte</h2>
+            <p>Nuestro equipo esta listo para contestar cualquier duda o consulta que puedas tener.
+                Te dejamos tips súper útiles para cuidar tu bikini y una guía de talles especialmente diseñada para que
+                encuentres tu Mariposa 88.
+            </p>
+            <div class="enlaces">
+                <a href="#">Tips de Cuidado</a>
+                <a href="#">Faqs</a>
+                <a href="#">Guia de Talles</a>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div id="formulario">
+                <h2 class="intro">Contactanos</h2>
+                <div id="contacto">
+                    <form action="#">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off">
+                        <input type="text" placeholder="Correo electronico" autocomplete="off" required>
+                        <input type="number" placeholder="Telefono" min="10" autocomplete="off">
+                        <div>
+                            <textarea class="campo" placeholder="Mensaje" name="comentarios" id="comentarios" cols="30"
+                                rows="4" autocomplete="off"></textarea>
+                        </div>
+                        <button class="botonEnviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="datos">
+                <div class="datos1">
+                    <h3 class="titulo-datos">Via Whatsapp</h3>
+                    <p>Nuestro horario de atención es de lunes a viernes de 9 a 17hs.</p>
+                </div>
+                <div class="datos2">
+                    <h3 class="titulo-datos">Via Email</h3>
+                    <p>Podés enviar un correo a consultas@mariposa88.com.ar con la duda que tengas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="titulo-footer">&copy; Copyright 2024 Bikinis Mariposa 88</h3>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

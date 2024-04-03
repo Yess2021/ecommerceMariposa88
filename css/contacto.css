@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main {
+    margin: 0px auto 20px;
+    width: 100%;
+}
+
+section {      
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.contacto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150px;  
+    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
+    background-size: cover;
+    width: 100%;
+    height: 150px; 
+    margin: 120px auto 40px;
+    text-align: center;
+}
+
+main .section1  {
+    align-items: center;
+     
+}
+
+.intro {
+    font-weight: 300px;
+    font-size: 30px;  
+}
+
+.titulo-datos {
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+p {
+    width: 80%;  
+}
+
+.enlaces {
+    display: flex;
+    gap: 100px;
+    margin: 40px 0 50px;
+    text-transform: uppercase;
+}
+
+.enlaces a {
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main .section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+#formulario {
+    margin-top: 0px;
+}
+
+#datos {
+    margin-top: 40px;
+    width: 30%;
+    height: 350px;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;  
+}
+
+#datos h3 {
+    margin-top: 50px;
+}
+
+.datos1 {
+    background-image: url('../Icons/whatsapp_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;  
+}
+
+.datos2 {
+    background-image: url('../Icons/mail_email_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+}
+
+
+input, button.botonEnviar, textarea {
+    display: block;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px grey;
+    outline: none;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: rgb(53, 51, 51);
+    padding: 5px;   
+}
+
+textarea {
+    margin-left: 10px;
+    resize: both; 
+    min-width: 200px;
+    max-width: 80%;
+}
+
+button.botonEnviar {
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px 200px;
+    text-transform: uppercase;
+}

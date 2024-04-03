@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-mariposa">
+            <h2 id="nombre-empresa">Mariposa 88</h2>
+            <div class="logo-mariposa"></div>
+        </div>
+
+      
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a> </li>
+                    <li> <a href="./alta.html">Alta</a> </li>
+                    <li> <a href="./contacto.html">Contacto</a> </li>
+                    <li> <a href="./nosotros.html">Nosotros</a> </li>
+                </ul>
+            </nav>
+
+            <div class="iconos-header">
+                <a id="logoFav" href="./favoritos.html"></a>
+                <a id="logoRegistro" href="./registro.html"></a>
+
+                <div class="search-container">
+                    <div id="logoBuscar" onclick="botonSearch()"></div>
+                    <div id="barra-busqueda">
+                        <input type="text" id="input-busqueda" />
+                        <input type="submit" value="Buscar" id="submit" />
+                    </div>
+                </div>
+
+                <a id="botonCarrito" href="./carrito.html"></a>
+            </div>
+    
+        <button class="menu-hamburger" onclick="showMenu()"></button>
+
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+
+    <div id="overlay">
+        <div class="mobile-menu">
+            <div class="mobile-icons"> 
+                <div class="grupo-iconos">
+                    <a class="fav" href="./favoritos.html"></a>
+                    <a class="registro" href="./registro.html"></a>
+                    <a class="carrito" href="./carrito.html"></a>
+                </div>
+                <button class="cerrar" onclick="closeMenu()"></button>
+            </div>
+
+            <hr>
+
+            <ul class="links-menu">
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+            <div class="social-icons">
+                <div class="face"></div>
+                <div class="insta"></div>
+                <div class="tictoc"></div>
+            </div>
+      
+        </div>
+       
+    </div>
+    <!-- ------------------------------------------------------------------------------- -->
+    <main>
+
+        <h1 id="tituloRegistro">Cuenta</h1>
+        <div id="principal">
+            <section class="inicio">
+                <h3 class="titulo1">Inicio de Sesion</h3>
+                <form action="#">
+                    <input type="text" placeholder="Correo electronico" autocomplete="off" required>
+                    <input type="email" id="email" name="email" placeholder="Contrasena" autocomplete="off" required>
+                    <p>Olvidaste tu contrasena?</p>
+                    <div>
+                        <button>Iniciar Sesion</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="registro">
+                <p>Aun no tenes cuenta?</p>
+                <h3 class="titulo2">Sumate a Nuestra Comunidad</h3>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico"
+                        autocomplete="off" required>
+                    <button id="cuenta">Crear Cuenta</button>
+                </form>
+            </section>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h3 class="titulo-footer">&copy; Copyright 2024 Bikinis Mariposa 88</h3>
+    </footer>
+
+    <script src="js/registro.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
