@@ -14,9 +14,9 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
-     
+    z-index: 1;    
 }
 
 #img2-inicio {
@@ -50,14 +50,19 @@ main {
     font-family:"Roboto", sans-serif; 
     font-weight: 700;
     font-size: 30px;
-    color:goldenrod;
+    color:rgb(245, 181, 21);
 }
 
 main .section-cards-header h1 {
-    font-family:"Roboto", sans-serif; 
+    margin: 50px auto;
     font-weight: 400;
-    margin-top: 70px;
-    color: black;
+    font-size: 35px;
+    text-align: center;  
+    line-height: 80px;  
+    height: 80px; 
+    width: 100%; 
+    color: white;
+    background-color: #ffb580;
 }
 
 main .section-cards-container {
@@ -65,13 +70,29 @@ main .section-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    position: relative;
+    position: relative; 
 }
 
 main section img {
     width: 300px;
     margin-bottom: 10px;
 } 
+
+main .card-container {
+    border: 1px solid transparent;
+    width: 302px; 
+    height: 530px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+main section.card-container:hover {
+    border: 1px solid grey;
+    background-color: #fffae2;
+}
 
 button.favoritosIcon {
     background-repeat: no-repeat;
@@ -92,49 +113,32 @@ button.favoritosIcon img {
     left: -4px;
 }
 
-main .card-container {
-    border: 1px solid transparent;
-    width: 302px; 
-    height: 530px;
-    padding: 0px;
-    background-color: white;
-    color: black;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-main section.card-container:hover {
-    border: 1px solid grey;
-    background-color: rgba(241, 237, 237, 0.8);
-
-}
-
 main section h4 {
-    font-size: 17px;
-    color: rgb(150, 57, 13);
+    font-size: 20px;
+    color: #c86653;
     margin: 5px;
 }
 
-
 button.ver-mas {
-    border: 1px solid rgb(78, 42, 25);
+    border: 1px solid #c86653;
     border-radius: 5px;
     width: 100px;
     height: 35px;
     margin-bottom: 50px;
-    background-color: rgb(193, 120, 85);   
+    background-color: #ffb580;   
 }
 
 button.ver-mas a {
     font-family:"Roboto", sans-serif; 
     text-decoration: none;
-    color: black;
+    color: #8f5246;
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
 }
 
 #look {
+    color: #c86653;
     font-family: "Roboto", sans-serif;
     font-weight: 400px;
     font-size: 25px;
@@ -188,14 +192,13 @@ button.ver-mas a {
 
 .shopLook:hover {
     opacity: 1;
-    
 }
 
 /* ---------------------------------------------------------------------------------------- */
 
-@media(max-width:768px){
+@media(max-width:768px) {
     #img2-inicio {
-        right: -55px;       
+    right: -55px;  
     }
     .texto {
     left: -10px;
@@ -205,9 +208,9 @@ button.ver-mas a {
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     #img2-inicio {
-        right: -50px;
+    right: -50px;
         
     }
     .texto {
@@ -218,6 +221,9 @@ button.ver-mas a {
     }
 
     #look1, #look2 {
-        display: none;
+    display: none;
     }
+    main .section-cards-header h1 {
+    font-size: 30px;
+}
 }

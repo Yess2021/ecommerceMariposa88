@@ -15,7 +15,8 @@ h1 {
 }
 
 .favoritos {
-    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
+    color: white;
+    background-image: linear-gradient(to right, #ffd580 5%, #ffb580 80%, #ff9580 100%);
     background-size: cover;
     width: 100%;
     height: 100px; 

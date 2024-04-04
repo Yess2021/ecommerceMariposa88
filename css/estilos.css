@@ -52,7 +52,7 @@ header nav {
 }
 
 #nombre-empresa {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 header nav {
@@ -221,9 +221,9 @@ header nav ul li a {
 #barra-busqueda {
     display: none;
     position: absolute;
-    width: 550px;
+    width: 950px;
     top: 60px;
-    right: -25px;
+    right: -500px;
     padding: 5px;  
 }
 
@@ -308,11 +308,11 @@ header nav ul li a {
 hr {
     height: 1px;
     border: none;
-    background-color: rgb(193, 120, 85);
+    background-color: #773517;
 }
 
 footer {
-    background-color: rgb(193, 120, 85);  
+    background-color: #c86653;  
     height: 100px;   
 }
 
@@ -331,13 +331,13 @@ footer {
 
 @media(max-width:768px){
     header nav {
-        display: none;
+    display: none;
     }
     header .iconos-header {
-        display: none;
+    display: none;
     }
     .menu-hamburger {
-        display: flex;
+    display: flex;
     }
     .icons-footer {
     width: 350px;
@@ -361,7 +361,6 @@ footer {
     }
     .container-mariposa {
     width: auto;
-    margin-left: 25px;
     }
 
 }

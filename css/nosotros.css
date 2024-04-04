@@ -6,12 +6,13 @@ main {
 }
 
 .nosotros-titulo {
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 100px;  
     height: 100px;   
-    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
+    background-image: linear-gradient(to right,#ffd580 5%, #ffb580 80%, #ff9580 100%);
     background-size: cover;
     width: 100%;
     margin: 120px auto 40px;

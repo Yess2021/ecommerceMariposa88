@@ -2,20 +2,31 @@
 //           Variables Globales
 // -------------------------------------------
 
-let inputBuscar = document.getElementById('barra-busqueda');
+let barraBuscar = document.getElementById('barra-busqueda');
+let inputBuscar = document.getElementById('input-busqueda');
 
 // -------------------------------------------
 //           Funciones Globales
 // -------------------------------------------
 
 function botonSearch() {
-    if (inputBuscar.style.display === 'none'  ) {
-        inputBuscar.style.display = 'block';
+    const display = window.getComputedStyle(barraBuscar).getPropertyValue("display");
+    console.log(display)
+    if (display === 'none') {
+        barraBuscar.style.display = 'block';
+        inputBuscar.focus()
     } else {
-        inputBuscar.style.display = 'none' ;
+        inputBuscar.value = '';
+        barraBuscar.style.display = 'none';
     }
-
 }
+
+function closeSearch() {
+    inputBuscar.value = '';
+    barraBuscar.style.display = 'none';
+}
+
+
 
 const overlay = document.getElementById('overlay');
 

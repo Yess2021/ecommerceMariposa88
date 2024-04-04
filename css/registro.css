@@ -7,6 +7,7 @@ main {
 }
 
 #tituloRegistro {
+    color: white;
     margin: 120px auto 50px;
     font-weight: 400;
     font-size: 40px;
@@ -14,8 +15,8 @@ main {
     line-height: 100px;  
     height: 100px; 
     width: 100%; 
-    background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
-    background-size: cover;
+    background-image: linear-gradient(to right, #ffd580 5%, #ffb580 80%, #ff9580 100%);
+    background-size: contain;
 }
 
 #principal {
