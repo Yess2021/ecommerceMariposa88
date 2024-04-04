@@ -46,23 +46,7 @@ function agregarFav(nombre) {
     }
     representarCardsProductos()
     console.log("lista actualizada", listaFavoritos)
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function start() {

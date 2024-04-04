@@ -22,4 +22,9 @@ h1 {
     margin: 120px auto 40px;
 }
 
+@media(max-width:576px){
+    .favoritos {
+    font-size: 32px;
+}
+}
 

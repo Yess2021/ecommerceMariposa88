@@ -68,7 +68,7 @@ function representarTablaProductos() {
                             '<td>'+ productos[i].precio + '</td>' +
                             '<td>'+ productos[i].stock + '</td>' +
                             '<td>'+ productos[i].colores + '</td>' +
-                            '<td><img width="75" src="'+ productos[i].foto + '" alt="foto de '+ productos[i].nombre +'"></td>' +
+                            '<td><img width="60" src="'+ productos[i].foto + '" alt="foto de '+ productos[i].nombre +'"></td>' +
                         '</tr>'
         }
     }

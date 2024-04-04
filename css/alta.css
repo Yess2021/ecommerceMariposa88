@@ -8,7 +8,7 @@ main {
     height: auto;
 }
 
-main h1 {
+h1.titulo-alta {
     text-align: center;
     margin-top: 100px;
 }
@@ -17,7 +17,7 @@ main h1 {
 
 main .alta-form {
     background-image: linear-gradient(to right, rgb(193, 120, 85), rgb(255, 127, 80));
-    width: 70%;
+    max-width: 700px;
     margin: 20px auto;
     padding: 30px;
     color: white;
@@ -48,14 +48,13 @@ main label[for="envio"] {
 main form button {
     margin: 15px auto;
     display: block;
-    width: 30%;
+    width: 90px;
     height: 35px;
     background-color: #C17855;
     box-shadow: 5px 5px 7px rgb(136, 77, 50);
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
-    /* color: #130f40; */
 }
 
 main input {
@@ -64,8 +63,7 @@ main input {
     border-radius: 5px;
     box-shadow: 5px 5px 7px rgb(94, 51, 32);
     outline: none;
-    border-style: none;
-    
+    border-style: none;  
 }
 
 main input[type="checkbox"] {
@@ -78,14 +76,12 @@ main th, td {
     border: 1px solid rgb(94, 51, 32);
     width: 80px;
     height: 30px;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 
-main table {
-    
+main table {  
     border-collapse: collapse;
-    margin: 5px auto;
+    margin: 5px auto 5px;
 }
 
 main th {
@@ -98,8 +94,46 @@ main h2 {
     text-align: center;
 }
 
+/* ------------------------------------------------------------------------------------- */
 
+@media(max-width:768px) {
+    h1.titulo-alta {
+    margin-top: 80px;
+    font-size: 27px;
+    }
+    main form button {
+    font-size: 17px;
+    width: 80px;
+    height: 30px;
+    }
+}
 
+@media(max-width:576px) {
+    h1.titulo-alta {
+    margin-top: 60px;
+    font-size: 23px;
+    }
+
+    main form button {
+    font-size: 15px;  
+    width: 70px;
+    height: 30px;
+ 
+    }
+
+    h2#titulo-table {
+    font-size: 20px;
+    }
+
+    main td, th {
+    padding: 2px;  
+    font-size: 13px;
+    } 
+    label {
+    font-size: 14px;
+    }
+
+}
 
 
 

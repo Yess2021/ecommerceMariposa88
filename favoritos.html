@@ -18,31 +18,31 @@
             <div class="logo-mariposa"></div>
         </div>
 
-      
-            <nav>
-                <ul>
-                    <li> <a href="./index.html">Inicio</a> </li>
-                    <li> <a href="./alta.html">Alta</a> </li>
-                    <li> <a href="./contacto.html">Contacto</a> </li>
-                    <li> <a href="./nosotros.html">Nosotros</a> </li>
-                </ul>
-            </nav>
 
-            <div class="iconos-header">
-                <a id="logoFav" href="./favoritos.html"></a>
-                <a id="logoRegistro" href="./registro.html"></a>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+        </nav>
 
-                <div class="search-container">
-                    <div id="logoBuscar" onclick="botonSearch()"></div>
-                    <div id="barra-busqueda">
-                        <input type="text" id="input-busqueda" />
-                        <input type="submit" value="Buscar" id="submit" />
-                    </div>
+        <div class="iconos-header">
+            <a class="logoFav" href="./favoritos.html"></a>
+            <a class="logoRegistro" href="./registro.html"></a>
+
+            <div class="search-container">
+                <div id="logoBuscar" onclick="botonSearch()"></div>
+                <div id="barra-busqueda">
+                    <input type="text" id="input-busqueda" />
+                    <input type="submit" value="Buscar" id="submit" />
                 </div>
-
-                <a id="botonCarrito" href="./carrito.html"></a>
             </div>
-    
+
+            <a class="logoCarrito" href="./carrito.html"></a>
+        </div>
+
         <button class="menu-hamburger" onclick="showMenu()"></button>
 
     </header>
@@ -50,17 +50,15 @@
 
     <div id="overlay">
         <div class="mobile-menu">
-            <div class="mobile-icons"> 
+            <div class="mobile-icons">
                 <div class="grupo-iconos">
-                    <a class="fav" href="./favoritos.html"></a>
-                    <a class="registro" href="./registro.html"></a>
-                    <a class="carrito" href="./carrito.html"></a>
+                    <a class="logoFav" href="./favoritos.html"></a>
+                    <a class="logoRegistro" href="./registro.html"></a>
+                    <a class="logoCarrito" href="./carrito.html"></a>
                 </div>
                 <button class="cerrar" onclick="closeMenu()"></button>
             </div>
-
-            <hr>
-
+            <hr class="hr-mobile">
             <ul class="links-menu">
                 <li> <a href="./index.html">Inicio</a> </li>
                 <li> <a href="./alta.html">Alta</a> </li>
@@ -72,9 +70,9 @@
                 <div class="insta"></div>
                 <div class="tictoc"></div>
             </div>
-      
+
         </div>
-       
+
     </div>
     <!-- ------------------------------------------------------------------------------- -->
     <main>
@@ -85,9 +83,28 @@
    
         <div class="section-cards-container"></div>
 
-
-
     </main>
+
+    <div class="icons-footer">
+        <div class="container-mariposa">
+            <h2 id="nombre-empresa">Mariposa 88</h2>
+            <div class="logo-mariposa"></div>
+        </div>
+        <div id="social-footer">
+            <div class="face"></div>
+            <div class="insta"></div>
+            <div class="tictoc"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="extra-footer">
+        <ul>
+            <li>Cambios y devoluciones</li>
+            <li>Envios</li>
+            <li>Formas de Pago</li>
+            <li>Terminos y Condiciones</li>
+        </ul>
+    </div>
 
     <footer>
         <h3 class="titulo-footer">&copy; Copyright 2024 Bikinis Mariposa 88</h3>
